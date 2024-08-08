@@ -1,0 +1,89 @@
+div {
+    box-sizing: border-box;
+}
+
+#top{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(95, 186, 243);
+    animation-name: fade;
+    animation-duration: 12s;
+}
+
+#sun{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 440px;
+    z-index: 1;
+    animation-name: move;
+    animation-duration: 4s;
+}
+
+#bottom {
+    width: 100%;
+    height: 300px;
+    background-color: dodgerblue;
+}
+
+@keyframes fade {
+    0%{
+        filter: brightness(120%);
+    }
+
+    100%{
+        filter: brightness(0%); 
+    }
+}
+
+@keyframes move {
+    0%{
+        bottom: 460px;
+        left: 100px;
+    
+    }
+    20%{
+        bottom: 490px;
+        left: 200px;
+
+    }
+    40%{
+        bottom: 510px;
+        left: 300px;
+    }
+    60%{
+        bottom: 540px;
+        left: 450px;
+    }
+    100%{
+        bottom: 420px;
+        left: 700px;
+    }
+
+}
+
+#boat{
+    animation-name: slide;
+    animation-duration: 6s;
+    position: absolute;
+}
+
+@keyframes slide {
+    0%{
+        bottom: 200px;
+        left: 0px;
+    }
+    100%{
+        bottom: 200px;
+        left: 900px;
+    }
+}
+
+#rainbow{
+    position: absolute;
+    right: 110px;
+    top: 40px;
+    width: 200px;
+    height: 150px;
+    z-index: 1;
+}
